@@ -1,2 +1,4 @@
 # odin-knights-travails
-A knight can be placed at any square on the board if given the right number of turns.  This program will find the shortest possible route between two positions on the board.
+A knight can be placed at any square on a chess board if given the right number of turns.  This program will find the shortest possible route between two positions on the board.
+
+To do this, the program will use a breadth first search to find the desiredNode, this will insure we get the shortest path because it will check all possible positions of the first move, before it starts checking possible positions of the second move, and it checks all possible positions of the second move, before checking all possible positions that require 3 moves, and so on until the desiredNode is found.  Once the desiredNode has been found, we just have to trace back to the root node and print all the positions that lead us here.
